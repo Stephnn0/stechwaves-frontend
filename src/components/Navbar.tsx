@@ -1,5 +1,6 @@
 import React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const scrollToSection = (id: string) => {
@@ -14,18 +15,22 @@ const Navbar: React.FC = () => {
       {/* Logo */}
       <div className="flex items-center space-x-2">
         <MenuIcon />
-        <img src="/img/logo3.png" alt="Logo" className="h-7 w-auto" />
+        <Link to={"/"}>
+          <img src="/img/logo3.png" alt="Logo" className="h-7 w-auto" />
+        </Link>
       </div>
 
       {/* Navigation Buttons */}
       <div className="hidden md:flex space-x-6 text-gray-600  ">
-        <button onClick={() => scrollToSection("section1")}>About</button>
-        <button
-          className="bg-green-700 hover:bg-green-800 text-white px-3 py-1 rounded-lg"
-          onClick={() => scrollToSection("section4")}
-        >
-          Free Consulting
-        </button>
+        <button onClick={() => scrollToSection("section2")}>About</button>
+        <Link to={"/consulting"}>
+          <button
+            className="bg-green-700 hover:bg-green-800 text-white px-3 py-1 rounded-lg"
+            onClick={() => {}}
+          >
+            Free Consulting
+          </button>
+        </Link>
       </div>
     </nav>
   );

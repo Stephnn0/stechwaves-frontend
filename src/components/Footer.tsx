@@ -10,19 +10,19 @@ export const Footer: React.FC = () => {
           <ul className="list-none">
             <FooterLink href="/" text="Home" />
             <FooterLink href="/terms" text="Terms of Service" />
-            <FooterLink href="/links" text="Links" />
+            <FooterLink href="/consulting" text="Consulting" />
             <FooterLink href="/privacy" text="Privacy Policy" />
           </ul>
         </div>
 
         {/* Contact Information */}
         <div className="mb-8">
-          <h3 className="text-xl font-bold mb-4">Blog Categories</h3>
+          <h3 className="text-xl font-bold mb-4">Site Topics</h3>
           <ul className="list-none">
             <FooterLink href="#" text="Technology" />
-            <FooterLink href="#" text="Shopify" />
-            <FooterLink href="#" text="Devops" />
-            <FooterLink href="#" text="News" />
+            <FooterLink href="#" text="Shopify Apps" />
+            <FooterLink href="#" text="Marketing" />
+            <FooterLink href="#" text="Business" />
           </ul>
         </div>
       </div>

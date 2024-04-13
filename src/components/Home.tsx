@@ -3,65 +3,46 @@ import BannerMessage from "./BannerMessage";
 import { Footer } from "./Footer";
 import Grid from "./Grid";
 import ImageContentComponent from "./ImageContentComponent";
-import Navbar from "./Navbar";
 import TextMessage from "./TextMessage";
 
 const HomePage = () => {
   const products = [
     {
       id: 1,
-      imageSrc: "/img/cubes.jpeg",
+      imageSrc: "/img/marketing.png",
       title:
-        "Unite marketing, sales, and service in a single app. Try Salesforce Starter Suite today. There's nothing to install. No credit card required.",
-      buttonText: "Add to Cart",
+        "Reach your target audience effectively and drive sales with our suite of marketing apps for Shopify. From email campaigns to social media integration, our tools empower you to engage customers and boost your online presence effortlessly.",
+      buttonText: "Learn More",
     },
     {
       id: 2,
-      imageSrc: "/img/cubes.jpeg",
-      title: "Try Salesforce Starter Suite for free.",
-      buttonText: "Add to Cart",
+      imageSrc: "/img/order.jpeg",
+      title:
+        "Streamline your order processing and enhance efficiency with our order management apps for Shopify. From tracking shipments to managing inventory, our solutions ensure smooth operations, allowing you to focus on growing your business.",
+      buttonText: "Learn More",
     },
     {
       id: 3,
-      imageSrc: "/img/cubes.jpeg",
-      title: "Try Salesforce Starter Suite for free.",
-      buttonText: "Add to Cart",
-    },
-    {
-      id: 4,
-      imageSrc: "/img/cubes.jpeg",
-      title: "Try Salesforce Starter Suite for free.",
-      buttonText: "Add to Cart",
-    },
-    // Add more product objects as needed
-    {
-      id: 1,
-      imageSrc: "/img/cubes.jpeg",
+      imageSrc: "/img/discounts.png",
       title:
-        "Unite marketing, sales, and service in a single app. Try Salesforce Starter Suite today. There's nothing to install. No credit card required.",
-      buttonText: "Add to Cart",
-    },
-    {
-      id: 2,
-      imageSrc: "/img/cubes.jpeg",
-      title: "Try Salesforce Starter Suite for free.",
-      buttonText: "Add to Cart",
+        "Attract customers and increase conversions with our discount apps for Shopify. Create compelling offers, implement dynamic pricing strategies, and boost customer loyalty effortlessly. Maximize your sales potential with our tailored discount solutions.",
+      buttonText: "Learn More",
     },
   ];
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* Sections */}
       <BannerMessage
-        message={"Unite marketing, sales, and service in a single app"}
+        message={"Schedule Your FREE Shopify App Consultation Today!"}
       />
       <section id="section1" className=" ">
         <ImageContentComponent
           imageUrl={"/img/one.png"}
-          title={"Try Salesforce Starter Suite for free."}
+          title={"Empower Your E-Commerce with Tailored Shopify Solutions!"}
           description={
-            "Unite marketing, sales, and service in a single app. Try Salesforce Starter Suite today. There's nothing to install. No credit card required."
+            "Maximize efficiency, enhance user experience, and stay ahead of the competition with our innovative Shopify apps. Let's transform your e-commerce vision into reality today!"
           }
           button1Text={"About Us"}
           button2Text={"Contact"}
@@ -74,7 +55,7 @@ const HomePage = () => {
         />
       </section>
 
-      <TextMessage description={"Get the latest from Salesforce"} />
+      <TextMessage description={"Custom Shopify Apps for Every Business"} />
       <section id="section2">
         <Grid products={products} />
       </section>

@@ -48,37 +48,31 @@ const ImageComponent = () => {
       <div
         className="absolute inset-0 bg-black  z-0"
         style={{
-          backgroundImage: "url('/img/nice.png')",
+          backgroundImage: "url('/img/blue.jpeg')",
           backgroundPosition: "center",
           backgroundSize: "cover",
         }}
       ></div>
 
       {/* Content */}
-      <div className="relative z-10 ">
-        {/* Message */}
-        {/* <h1 className="text-5xl font-bold mb-4 text-white text-center">
-          STECHWAVES
-        </h1> */}
-        <h1 className="text-5xl font-bold mb-4 text-center">
-          {/* Apply green gradient to the text */}
-          <span className="text-gradient bg-gradient-to-r from-green-400 to-green-600 text-transparent bg-clip-text">
-            STECHWAVES
-          </span>
-        </h1>
-
-        <p className="text-2xl  mb-4 text-white">
-          Let's work on your next project!
-        </p>
+      <div className="relative z-10 pt-20 ">
+        {/* <p className="text-4xl  mb-4 text-black">
+          How would you like to contact Stechwaves?
+        </p> */}
 
         {/* Form */}
         <form
           ref={form as React.RefObject<HTMLFormElement>}
-          className="bg-white bg-opacity-25 rounded-lg p-8"
+          className="bg-white p-8"
           onSubmit={sendEmail}
         >
           {/* Email Input */}
           <div className="mb-4">
+            <p className="text-2xl  mb-4 text-black">Request a call.</p>
+            <p className="text-md mb-4 text-black">
+              Give us some info so the right person can get back to you.
+            </p>
+
             <label
               htmlFor="email"
               className="block text-sm font-semibold mb-2 text-white"
@@ -119,7 +113,7 @@ const ImageComponent = () => {
           ) : (
             <button
               type="submit"
-              className="w-full border border-green-500 text-green-500 py-2 rounded-lg hover:bg-green-700 hover:text-white transition duration-300"
+              className="w-full border border-blue-500 text-blue-500 py-2 rounded-lg hover:bg-blue-700 hover:text-white transition duration-300"
             >
               Send
             </button>
