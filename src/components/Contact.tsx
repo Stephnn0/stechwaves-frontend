@@ -49,7 +49,7 @@ const Contact = () => {
         </h1>
         <p className="text-black">
           Get in touch with us today! We value your feedback and inquiries. If
-          you have any questions.
+          you have any questions..
         </p>
       </div>
 
